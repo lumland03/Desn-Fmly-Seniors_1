@@ -3,10 +3,12 @@
 body {
   padding: 2rem;
   background: teal;
+  
 }
 
 h1 {
   text-transform: uppercase;
+  font-family: 'Tanker', sans-serif;
 }
 
 main {
