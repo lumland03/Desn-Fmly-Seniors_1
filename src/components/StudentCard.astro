@@ -18,12 +18,12 @@ const slug = name.toLowerCase().replace(/\s+/g, "-");
 <style>
   .card {
     border: 0;
-    padding: 1rem;
+    padding: 1rem 1rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: .5rem;
     border: 1px solid lightgray;
-    background: gray;
+    background: #333;
     font-family: 'Tanker', sans-serif;
   }
 
@@ -35,7 +35,17 @@ const slug = name.toLowerCase().replace(/\s+/g, "-");
   }
 
   .card-name {
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    
+      
     }
+
+  .card-name a {
+    text-decoration: none;
+    color: #B7142E;
+  }
 
   .card-emoji {
   
@@ -43,8 +53,9 @@ const slug = name.toLowerCase().replace(/\s+/g, "-");
 
   .card-links {
     display: flex;
-    gap: 0.75rem;
+    gap: .75rem;
     margin-top: auto;
+    font-size: 1.25rem;
   }
 
   .card-links a {
