@@ -9,11 +9,27 @@ const { name, image, favorite_emoji, github_permalink, github_profile, codepen_p
   <a href={github_permalink} target="_blank" rel="noopener">Portfolio</a>
   <a href={github_profile} target="_blank" rel="noopener">GitHub</a>
   <a href={codepen_profile} target="_blank" rel="noopener">CodePen</a>
-  
+  <button class="home" onclick="window.location.href='/'">
+  Home
+</button>
 </nav>
 <p>{bio}</p>
 </div>
 <style>
+
+img{
+  border: 2rem solid;
+  border-color: #b7142e;
+  border-image-slice: 1; /* Required to make the gradient appear */
+  border-image-source: linear-gradient(115deg,rgba(20, 183, 159, 1) 0%, rgba(0, 73, 125, 1) 100%);
+}
+
+  body{
+    width: 100%;
+    margin: 0 auto;
+    background: #333;
+
+  }
   div{
     display: flex;
     flex-direction: column;
@@ -21,15 +37,50 @@ const { name, image, favorite_emoji, github_permalink, github_profile, codepen_p
     margin: 2rem;
 }
 
+nav{
+  margin: 1rem;
+}
 
+p{
+  width: 40%;
+  color: #fff;
+}
+
+a{
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  font-family: 'Clash Display', sans-serif;
+  font-size: 1.25rem;
+  transition: all 0.3s ease;
+   display: inline-block;
+}
+
+a:hover{
+  background: #555;
+  scale: 1.05;
+  
+}
 
   .home{
-  background: red;
-  padding: 1rem;
-  border-radius: 1rem;
+  background: #b7142e;
+  padding: 0.5rem 1rem;
+  border-radius: .5rem;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: 'Clash Display', sans-serif;
+  transition: all 0.3s ease;
+  display: block;           
+  margin: auto;
+}
+
+.home:hover{
+  scale: 1.05;
+  background: #ff1e43;
 }
 </style>
 
-<button class="home" onclick="window.location.href='/'">
-  Home
-</button>

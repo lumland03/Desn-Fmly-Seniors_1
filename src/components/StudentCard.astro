@@ -38,7 +38,7 @@ const slug = name.toLowerCase().replace(/\s+/g, "-");
     margin-top: 1.5rem;
     font-size: 2rem;
     text-decoration: none;
-    
+    transition: all 0.3s ease;
       
     }
 
@@ -56,16 +56,21 @@ const slug = name.toLowerCase().replace(/\s+/g, "-");
     gap: .75rem;
     margin-top: auto;
     font-size: 1.25rem;
+    
   }
 
   .card-links a {
     text-decoration: none;
-    color: goldenrod;
-    border-bottom: 1px solid currentColor;
+    color: #ccc;
+    transition: all 0.3s ease;
   }
 
   .card-links a:hover {
-    background: gray;
+    scale: 1.05;
     color: white;
+  }
+
+  .card-name:hover{
+    scale: 1.05;
   }
 </style>
