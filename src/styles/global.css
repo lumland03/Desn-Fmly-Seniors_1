@@ -33,7 +33,9 @@ hr{
   border: none;
 }
 
-
+section{
+  height: 80vh;
+}
 
 p{
   font-family: 'Clash Display', sans-serif;
@@ -41,12 +43,11 @@ p{
 }
 
 footer{
+ position: relative;
   text-align: center;
   margin-top: 1rem;
   padding: 2rem;
   background-color: #B7142E;
-  position: relative;
-  bottom:0;
   width: 100%;
   font-family: 'Clash Display', sans-serif;
   color: #fff;
